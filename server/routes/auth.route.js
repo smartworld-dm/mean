@@ -4,6 +4,9 @@ import expressJwt from 'express-jwt';
 import paramValidation from '../config/param-validation';
 import authCtrl from '../controllers/auth.controller';
 import config from '../config/config';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const router = express.Router(); // eslint-disable-line new-cap
 
